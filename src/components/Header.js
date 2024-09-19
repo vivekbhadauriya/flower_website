@@ -6,13 +6,16 @@ const Header = () => {
   return (
     <div>
         <header>
-    <div className="logo"></div>
-    <nav>
-      <Link to='/birthday' className="">Brithday</Link>
-      <Link to='/about' className="">About us</Link>
+    <div className="logo">
+      <img src="logo.jpg" alt="" />
+    </div>
+      <div className='Pagesname'>
+      <Link to='/birthday' className="">Birthday</Link>
       <Link to='/romance-love' className="">Romance & Love</Link>
+      <Link to='/about' className="">About us</Link>
       <Link to='/more' className="">More</Link>
-    </nav>
+      </div>
+  
     <div className="search-bar">
       <input type="text" placeholder="Search here" />
     </div>

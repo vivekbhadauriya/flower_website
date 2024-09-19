@@ -8,18 +8,24 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
     background-color:white;
     font-size: large;
     font-weight: bold;
   }
-  
+  .Pagesname{
+    display: flexbox;
+    justify-content:space-between;  
+    font-size:medium;
+    
+    
+  }
   .logo {
     width: 40px;
     height: 40px;
     background-color: #333;
     border-radius: 50%;
   }
+  
   
   .nav-link {
     margin-right: 15px;
@@ -83,10 +89,10 @@
   }
   
   .hero-image {
-    flex: 1;
-    display: grid;
-    height: 700px;
-    width:  700px;
+
+    display:flexbox;
+    height:900;
+    width:900;
     
   }
   
@@ -250,6 +256,7 @@
     border-radius: 20px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    justify-content: space-between;
   }
   
   .filter-button:hover {
