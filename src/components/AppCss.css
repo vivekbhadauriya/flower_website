@@ -1,35 +1,40 @@
 .App {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
+    max-width: 100;
+    padding-top: 30px;
+    box-sizing: border-box;
   }
   /* Header Styles */
-  header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  header{
     background-color:white;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
     font-size: large;
     font-weight: bold;
+    margin-left: 10px;
+    margin-right: 10px;
   }
-  .Pagesname{
-    display: flexbox;
-    justify-content:space-between;  
-    font-size:medium;
-    
-    
-  }
+.Pagesname{
+  display: flex;
+  justify-content: space-between;
+  width:50%;
+  
+
+}
+
   .logo {
     width: 40px;
+    margin-left:20px;
     height: 40px;
     background-color: #333;
     border-radius: 50%;
+    
   }
   
   
   .nav-link {
-    margin-right: 15px;
     text-decoration: none;
+    margin-left:15px;
     color: #333;
     transition: color 0.3s ease;
   }
