@@ -4,6 +4,9 @@ import Hero from '../components/Hero';
 import FilterOptions from '../components/FilterOptions';
 import Product from '../components/Product';
 import Header from '../components/Header';
+import TopSelling from "../components/TopSelling";
+import CustomerReviews from '../components/CustomerReviews';
+import Footer from '../components/Footer';
 import "../components/AppCss.css"
 
 const HomePage = () => {
@@ -35,10 +38,13 @@ const HomePage = () => {
                         <Product key={product.name} {...product} />
                     ))}
                 </section>
+                <TopSelling />
+                <CustomerReviews />
+                <Footer />
             </main>
         </div>
     )
     
-}
+} 
 
 export default HomePage

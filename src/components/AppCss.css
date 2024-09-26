@@ -1,9 +1,11 @@
 .App {
-    max-width: 100;
+    max-width:100;
     padding-top: 30px;
     box-sizing: border-box;
   }
   /* Header Styles */
+
+
   header{
     background-color:white;
     align-items: center;
@@ -67,6 +69,10 @@
     border-radius: 50%;
     margin-right: 10px;
   }
+
+
+
+
   
   /* Main Content Styles */
   main {
@@ -120,24 +126,20 @@
     text-align: center;
   }
   
-  .shop-now {
-    padding: 8px 16px;
-    font-size: 14px;
-    font-weight: bold;
-    text-align: center;
+  .shop-now-button {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
   }
   
-  /* .hero-garland {
-    position: absolute;
-    top: -20px;
-    left: 0;
-    right: 0;
-    height: 60px;
-    background-image:url('E:\WEBP\my-react-app\public\hero.jpg');
-    background-repeat: repeat-x;
-    background-size: contain;
-  } */
+  .shop-now-button:hover {
+    background-color: #444;
+  }
   
+
   .start-from{
     background-color: #eb7397c4;
     color: black;
@@ -161,6 +163,8 @@
     cursor: pointer;
     transition: 41ms;
   }
+
+
   
   /* Category Styles */
   .categories {
@@ -238,8 +242,7 @@
   
   /* Filter Styles */
   
-  
-  
+
   
   .filter-options {
     display: flex;
@@ -352,3 +355,334 @@
   .shop-now:hover, .add-to-cart:hover {
     background-color: #45a049;
   }
+
+/*  TOP SELLING + CUSTOMER REVIEW AND FOOTER CSS */
+
+
+/* General styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Top Selling Section */
+.top-selling {
+  padding: 40px 0;
+  background-color: #f8f8f8;
+}
+
+.top-selling h2 {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.product-card {
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+.product-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.product-name {
+  font-size: 18px;
+  margin: 10px 0;
+  padding: 0 15px;
+}
+
+.product-price {
+  font-weight: bold;
+  color: #e91e63;
+  margin: 10px 0;
+  padding: 0 15px;
+}
+
+.add-to-cart {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-to-cart:hover {
+  background-color: #45a049;
+}
+
+/* Customer Reviews Section */
+.customer-reviews {
+  padding: 40px 0;
+  background-color: #fff;
+}
+
+.customer-reviews h2 {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+.review-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.review-card {
+  background-color: #f8f8f8;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+}
+
+.avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.reviewer-name {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.review-content {
+  font-style: italic;
+  color: #666;
+}
+
+/* Footer Section */
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 40px 0 20px;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 40px;
+}
+
+.footer-section h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.footer-description {
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+
+.social-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.footer-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-list li {
+  margin-bottom: 10px;
+}
+
+.footer-list a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-list a:hover {
+  color: #e91e63;
+}
+
+.newsletter-form {
+  display: flex;
+  margin-top: 15px;
+}
+
+.newsletter-input {
+  flex-grow: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 4px 0 0 4px;
+}
+
+.newsletter-button {
+  padding: 10px 15px;
+  background-color: #e91e63;
+  color: white;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.newsletter-button:hover {
+  background-color: #d81b60;
+}
+
+.footer-bottom {
+  margin-top: 40px;
+  text-align: center;
+  padding-top: 20px;
+  border-top: 1px solid #555;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .product-grid,
+  .review-grid,
+  .footer-content {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-section {
+    text-align: center;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+}
+
+
+
+  /* Product List Style  */
+
+
+
+
+  /* Quote Section Styling */
+.quote-section {
+  background-color: #fce4ec;
+  padding: 40px;
+  text-align: center;
+}
+
+.quote {
+  font-size: 24px;
+  color: #000;
+  font-family: 'Georgia', serif;
+  font-style: italic;
+  line-height: 1.5;
+}
+
+/* Featured Products Section Styling */
+.featured-products-section {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.section-title {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.product-list {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Product Card Styling */
+.product-card {
+  background-color: #f5f5f5;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 200px;
+}
+
+.product-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.product-name {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.product-price {
+  font-size: 16px;
+  color: #2ecc71;
+}
+
+/* Sale Section Styling */
+.sale-section {
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+  background-color: #fff5f5;
+}
+
+.sale-message {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.sale-image {
+  max-width: 300px;
+}
+
+.sale-text {
+  text-align: left;
+}
+
+.sale-text h2 {
+  font-size: 36px;
+  color: #e74c3c;
+}
+
+.sale-text p {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.shop-now-button {
+  background-color: #e74c3c;
+  color: white;
+  padding: 10px 20px;
+  font-size: 18px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.shop-now-button:hover {
+  background-color: #c0392b;
+}

@@ -3,7 +3,6 @@ import ProductList from './ProductList'
 import HomePage from '../page/HomePage'
 import { Route, Routes } from 'react-router-dom'
 import "./AppCss.css"
-// import ProductDetailsPage from '../ProductDetailsPage'
 import Birthdaypage from '../page/Birthdaypage'
 import RomanceLovePage from '../page/RomanceLovePage'
 import AboutPage from '../page/AboutPage'
@@ -17,7 +16,6 @@ const AppNavigation = () => {
             <Routes>
                 <Route path="/home" element={<HomePage/>} />
                 <Route path="/productlist" element={<ProductList />} />
-                {/* <Route path="/product/:productId" element={<ProductDetailsPage />} />  */}
                 <Route path='/birthday' element={<Birthdaypage/>} />
                 <Route path='/about' element={<AboutPage />} />
                 <Route path='/more' element={<MorePage />} />
