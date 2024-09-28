@@ -1,3 +1,10 @@
+/* src/AppCss.css */
+
+@import '~@fortawesome/fontawesome-free/css/all.min.css';
+
+
+
+
 .App {
     max-width:100;
     padding-top: 30px;
@@ -71,7 +78,137 @@
   }
 
 
+  /*  Login/Signup Page  */
 
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+  }
+  
+  .close-button {
+    background: transparent;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  .form-group {
+    margin-bottom: 10px;
+  }
+  
+  input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+  }
+  
+  .submit-btn {
+    background-color: #28a745;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .submit-btn:hover {
+    background-color: #218838;
+  }
+  
+  .toggle-auth {
+    background: transparent;
+    border: none;
+    color: blue;
+    cursor: pointer;
+  }
+
+
+  
+/* For the circular user icon/button */
+.user-icon-container {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+}
+
+.user-avatar {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.login-icon {
+  font-size: 12px;
+  color: #333;
+  text-align: center;
+}
+
+/* Modal styling */
+.auth-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.modal-content h2 {
+  margin-bottom: 20px;
+}
+
+.modal-content input {
+  margin: 5px 0;
+  padding: 10px;
+  width: 100%;
+}
+
+.auth-modal button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.auth-modal button:hover {
+  background-color: #45a049;
+}
+
+ 
 
   
   /* Main Content Styles */
@@ -484,6 +621,7 @@ body {
   background-color: #333;
   color: #fff;
   padding: 40px 0 20px;
+  height:auto;
 }
 
 .footer-content {
@@ -685,4 +823,261 @@ body {
 
 .shop-now-button:hover {
   background-color: #c0392b;
+}
+
+
+
+/*  About Page Css  */
+/* src/components/AboutPage.css */
+
+.about-page-container {
+  font-family: 'Arial, sans-serif';
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+/* Quote Section */
+.quote-section {
+  background: #c7dde3;
+  padding: 40px 20px;
+  text-align: center;
+  /* border-left: 5px solid #e91e63; */
+  margin-bottom: 40px;
+}
+
+.quote-section blockquote {
+  font-size: 2.5rem;
+  font-style: italic;
+  margin: 0;
+  color: #555;
+}
+
+.quote-section cite {
+  display: block;
+  margin-top: 15px;
+  font-size: 1.5rem;
+  color: #888;
+}
+
+
+
+/* About & CEO Section */
+.about-ceo-section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.about-text {
+  flex: 1;
+  min-width: 300px;
+  padding: 20px;
+}
+
+.about-text h2 {
+  font-size: 2rem;
+  color: #e91e63;
+  margin-bottom: 15px;
+}
+
+.about-text p {
+  font-size: 1.56rem;
+  color: #555;
+}
+
+.ceo-photo {
+  flex: 1;
+  min-width: 300px;
+  padding: 20px;
+  text-align: center;
+}
+
+.ceo-photo img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid #e91e63;
+  margin-bottom: 15px;
+}
+
+.ceo-photo h3 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.ceo-photo p {
+  font-size: 1rem;
+  color: #777;
+}
+
+/* Why Choose Us Section */
+.why-choose-us-section {
+  background: #f1f1f1;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.why-choose-us-section h2 {
+  font-size: 2rem;
+  color: #e91e63;
+  margin-bottom: 30px;
+}
+
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.feature {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  width: 250px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.feature:hover {
+  transform: translateY(-10px);
+}
+
+.feature i {
+  font-size: 2rem;
+  color: #e91e63;
+  margin-bottom: 15px;
+}
+
+.feature h3 {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.feature p {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about-ceo-section {
+    flex-direction: column;
+  }
+
+  .features {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .feature {
+    width: 80%;
+  }
+}
+/* More Page css */
+
+/* More Page Styles */
+.more-page {
+  font-family: Arial, sans-serif;
+  background-color: #fcf7f4;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+}
+
+.hero-content {
+  flex: 1;
+}
+
+.hero-content h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.hero-image {
+  flex: 1;
+  text-align: right;
+}
+
+.hero-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.cta-button {
+  background-color: #e74c3c;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.services {
+  padding: 40px;
+}
+
+.service-category {
+  margin-bottom: 30px;
+}
+
+.service-category h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.service-images {
+  display: flex;
+  gap: 20px;
+}
+
+.service-images img {
+  width: calc(50% - 10px);
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.cta-banner {
+  background-color: #ff69b4;
+  color: white;
+  text-align: center;
+  padding: 40px;
+  margin-top: 40px;
+}
+
+.cta-banner h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+  }
+
+  .hero-image {
+    margin-top: 20px;
+  }
+
+  .service-images {
+    flex-direction: column;
+  }
+
+  .service-images img {
+    width: 100%;
+  }
 }
