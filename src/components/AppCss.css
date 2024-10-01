@@ -719,9 +719,13 @@ body {
   /* Product List Style  */
 
 
-
-
   /* Quote Section Styling */
+
+.product-page header{
+  padding-bottom: 20px;
+  margin-left: 10px;
+    margin-right: 10px;
+}
 .quote-section {
   background-color: #fce4ec;
   padding: 40px;
@@ -781,6 +785,8 @@ body {
 }
 
 /* Sale Section Styling */
+
+
 .sale-section {
   display: flex;
   justify-content: center;
@@ -828,7 +834,7 @@ body {
 
 
 /*  About Page Css  */
-/* src/components/AboutPage.css */
+
 
 .about-page-container {
   font-family: 'Arial, sans-serif';
@@ -863,6 +869,12 @@ body {
 
 
 /* About & CEO Section */
+
+.about-page-container header{
+  padding-bottom: 20px;
+  margin-left: 10px;
+    margin-right: 10px;
+}
 .about-ceo-section {
   display: flex;
   flex-wrap: wrap;
@@ -983,6 +995,11 @@ body {
 /* More Page css */
 
 /* More Page Styles */
+.more-page header{
+  padding-bottom: 20px;
+  margin-left: 10px;
+    margin-right: 10px;
+}
 .more-page {
   font-family: Arial, sans-serif;
   background-color: #fcf7f4;
@@ -1081,3 +1098,70 @@ body {
     width: 100%;
   }
 }
+
+
+/* Cart Page Css */
+
+
+.cart-page {
+  padding: 20px;
+}
+
+.cart-items {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
+}
+
+.cart-item img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.cart-item h3 {
+  margin: 0;
+}
+
+.cart-total {
+  margin-top: 20px;
+  text-align: right;
+  font-size: 1.5rem;
+}
+
+button {
+  background-color: #ff6961;
+  border: none;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #ff4c4c;
+}
+
+
+
+/* Add to cart button  */
+
+.product add-to-cart-button{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    background-color: #45a049;
+  }

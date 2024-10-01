@@ -2,10 +2,12 @@
 import Footer from '../components/Footer';
 import React from 'react';
 import "../components/AppCss.css"
+import Header from '../components/Header';
 
 const AboutPage = () => {
   return (
     <div className="about-page-container">
+      <Header/>
       
       {/* Beautiful Quote Section */}
       <section className="quote-section">

@@ -5,7 +5,9 @@ import Header from '../components/Header';
 
 const MorePage = () => {
   return (
+
     <div className="more-page">
+      <Header/>
       <section className="hero">
         <div className="hero-content">
           <h1>"Where dreams meet design, and love is celebrated in every detail."</h1>

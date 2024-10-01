@@ -1,6 +1,10 @@
 import React from 'react'
 import "./AppCss.css"
-const Product = ({ name, price, image, backgroundColor }) => {
+// import { useCart } from './cartcontext';
+
+
+const Product = ({ name, price, image, backgroundColor,addToCart }) => {
+
     return (
         <div className="product" style={{ backgroundColor }}>
             <div className="product-image-container">
@@ -8,8 +12,11 @@ const Product = ({ name, price, image, backgroundColor }) => {
             </div>
             <h3>{name}</h3>
             <p>{price}</p>
+            <button className="add-to-cart-button" onClick={() => addToCart({ name, price, image })}>
+                                 Add to Cart
+      </button>
         </div>
     )
 }
 
-export default Product
+export default Product;
